@@ -16,8 +16,10 @@ img {
   max-width: 100%;
 }
 
-.main {
+main {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: var(--violet);
 }
 
@@ -25,6 +27,7 @@ img {
   background: url("images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  flex-grow: 1;
   padding: 2rem;
 }
 
@@ -113,8 +116,8 @@ i:hover {
 }
 
 /* for bigger screens */
-@media screen and (min-width: 800px) {
-  .main {
+@media screen and (min-width: 875px) {
+  main {
     background: url("images/bg-desktop.svg");
     background-color: var(--violet);
     background-repeat: no-repeat;
